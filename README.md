@@ -1,9 +1,9 @@
 # 微處理機系統 上機實作練習
 
-微處理機系統課程（2024 秋季）的實作作業與上機考練習，並為 **ACET 晶心開發系統技術能力分級檢定** 證照考試做準備。
-以 Arduino 語法（C/C++）操作 Andes **ADP-CORVETTE-F1** 開發板與 ACET Shield Board 上的 LED、七段顯示器、按鍵、LCD、蜂鳴器與 RTC。
+微處理機系統課程的實作作業與上機考練習，並為 **ACET 晶心開發系統技術能力分級檢定** 證照考試做準備。
+以 Arduino 語法(C/C++)操作 Andes **ADP-CORVETTE-F1** 開發板與 ACET Shield Board 上的 LED、七段顯示器、按鍵、LCD、蜂鳴器與 RTC。
 
-- **平台：** Andes ADP-CORVETTE-F1（AndesCore N25）+ ACET Shield Board
+- **平台：** Andes ADP-CORVETTE-F1(AndesCore N25)+ ACET Shield Board
 - **開發環境：** Arduino IDE 1.6.5
 - **使用技術：** GPIO、位元運算、MC74HC595A 移位暫存器、4×4 按鍵矩陣掃描、HD44780 LCM、PWM、RTC
 
