@@ -2,14 +2,14 @@
 
 > 微處理機系統 · 上機實作 · [回到目錄](../../README.md)
 
-- **平台：** Andes ADP-CORVETTE-F1 開發板 + ACET Shield Board
-- **開發環境：** Arduino IDE 1.6.5
+- **平台**：Andes ADP-CORVETTE-F1開發板 + ACET Shield Board
+- **開發環境**：Arduino IDE 1.6.5
 
 課堂上的即時練習與加分題。
 
-## 0910：5 種 LED 燈號變化
+## 0910：5種LED燈號變化
 
-**題目：** 以 LED 陣列做出 5 種燈號變化模式（Lab 1 的課堂練習版）。
+**題目**：以LED陣列做出5種燈號變化模式(Lab 1的課堂練習版)。
 
 [0910_LED_5Patterns.ino](0910_LED_5Patterns.ino)
 
@@ -88,9 +88,9 @@ void loop() {
 }
 ```
 
-## 0910 加分題 1：奇偶燈交替亮
+## 0910加分題1：奇偶燈交替亮
 
-**題目：** 讓 LED 奇數燈與偶數燈交替點亮。
+**題目**：讓LED奇數燈與偶數燈交替點亮。
 
 [0910_Bonus1_OddEven.ino](0910_Bonus1_OddEven.ino)
 
@@ -130,9 +130,9 @@ void LedControl(unsigned val) {
 }
 ```
 
-## 1001 加分題 2：四個數字常亮在七段顯示器
+## 1001加分題2：四個數字常亮在七段顯示器
 
-**題目：** 在 4 位數七段顯示器上同時常亮顯示 4 個數字（例：0930）。
+**題目**：在4位數七段顯示器上同時常亮顯示4個數字(例：0930)。
 
 [1001_Bonus2_4Digits.ino](1001_Bonus2_4Digits.ino)
 
@@ -173,7 +173,7 @@ void WriteNumberToSegment(byte Segment, byte Value) {
 
 ## 1001：按鍵掃描改寫
 
-**題目：** 將 4×4 按鍵掃描（keyscan）改寫成迴圈形式，並將按下的數字顯示在七段顯示器上。
+**題目**：將4×4按鍵掃描(keyscan)改寫成迴圈形式，並將按下的數字顯示在七段顯示器上。
 
 [1001_KeyScan_7Seg.ino](1001_KeyScan_7Seg.ino)
 
@@ -300,9 +300,9 @@ void WriteNumberToSegment(byte Segment, byte Value) {
 }
 ```
 
-## 1126：RTC 時間顯示
+## 1126：RTC時間顯示
 
-**題目：** 設定 RTC 初始時間並在 LCD 上顯示時:分:秒。
+**題目**：設定RTC初始時間並在LCD上顯示時:分:秒。
 
 [1126_RTC_LCD.ino](1126_RTC_LCD.ino)
 
