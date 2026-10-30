@@ -1,15 +1,15 @@
-# ACET 晶心開發系統檢定 實作題練習
+# ACET晶心開發系統檢定 實作題練習
 
 > 微處理機系統 · 上機實作 · [回到目錄](../../README.md)
 
-- **平台：** Andes ADP-CORVETTE-F1 開發板 + ACET Shield Board
-- **開發環境：** Arduino IDE 1.6.5
+- **平台**：Andes ADP-CORVETTE-F1開發板 + ACET Shield Board
+- **開發環境**：Arduino IDE 1.6.5
 
-針對 **ACET 晶心開發系統技術能力分級檢定** 實作題庫（ADP-Corvette-F1，Non-OS）進行練習，作為微處理機系統證照考試準備。
+針對**ACET晶心開發系統技術能力分級檢定**實作題庫(ADP-Corvette-F1，Non-OS)進行練習，作為微處理機系統證照考試準備。
 
 ## LED：間隔閃爍
 
-**題目：** 全部 LED 間隔閃爍，奇數亮則偶數不亮，反之亦然。
+**題目**：全部LED間隔閃爍，奇數亮則偶數不亮，反之亦然。
 
 [LED_Alternate.ino](LED_Alternate.ino)
 
@@ -41,9 +41,9 @@ void loop() {
 }
 ```
 
-## LED：由中間往兩側飛出（逐顆移動）
+## LED：由中間往兩側飛出(逐顆移動)
 
-**題目：** 亮燈從中間往兩側移動飛出。
+**題目**：亮燈從中間往兩側移動飛出。
 
 [LED_CenterOut.ino](LED_CenterOut.ino)
 
@@ -158,7 +158,7 @@ void ledControll(unsigned int light){
 
 ## LED：由中間往兩側依序點亮
 
-**題目：** 從中間開始往兩側依序點亮 LED，全部亮起後熄滅。
+**題目**：從中間開始往兩側依序點亮LED，全部亮起後熄滅。
 
 [LED_CenterFill.ino](LED_CenterFill.ino)
 
@@ -212,9 +212,9 @@ void ledControll(unsigned int light){
 }
 ```
 
-## 七段顯示器：數字 8 單字位移
+## 七段顯示器：數字8單字位移
 
-**題目：** 七段顯示器做出數字 8 單字位移，且不斷循環。
+**題目**：七段顯示器做出數字8單字位移，且不斷循環。
 
 [7Seg_Shift8.ino](7Seg_Shift8.ino)
 
@@ -255,7 +255,7 @@ void WriteNumberToSegment(byte Segment, byte Value) {
 
 ## LCD + Keypads：按鍵顯示數字
 
-**題目：** 按下 4×4 Keypads 其中一個按鍵，LCD 顯示該按鍵的編號（1~16）。
+**題目**：按下4×4 Keypads其中一個按鍵，LCD顯示該按鍵的編號(1~16)。
 
 [Keypad_LCD_v1.ino](Keypad_LCD_v1.ino)
 
@@ -433,7 +433,7 @@ bool keyscan(byte &keyIndex) {
 
 ## PWM：蜂鳴器播放音樂
 
-**題目：** 以 PWM 控制蜂鳴器產生音樂及唱歌。
+**題目**：以PWM控制蜂鳴器產生音樂及唱歌。
 
 [Buzzer_Song.ino](Buzzer_Song.ino)
 
