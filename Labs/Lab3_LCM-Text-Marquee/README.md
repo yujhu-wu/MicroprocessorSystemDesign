@@ -1,26 +1,26 @@
-# Lab 3：LCM 控制實驗 – 文字走馬燈
+# Lab 3：LCM控制實驗 – 文字走馬燈
 
 > 微處理機系統 · 課程作業 · [回到目錄](../../README.md)
 
-- **繳交期限：** 2024/10/31
-- **平台：** Andes ADP-CORVETTE-F1 開發板 + ACET Shield Board
-- **開發環境：** Arduino IDE 1.6.5
+- **繳交期限**：2024/10/31
+- **平台**：Andes ADP-CORVETTE-F1開發板 + ACET Shield Board
+- **開發環境**：Arduino IDE 1.6.5
 
 ## 題目要求
 
-設計可左／右位移的 LCM（HD44780 相容 LCD）文字走馬燈程式，程式需有註解說明各種指令之控制。
+設計可左／右位移的LCM(HD44780相容LCD)文字走馬燈程式，程式需有註解說明各種指令之控制。
 
-- 一開始畫面清空（`clear()`），游標顯示在左上角。
-- **Push button 1：** 第一組文字（長度 40）顯示在第一列。
-- **Push button A：** 第二組文字（長度 40）顯示在第二列。
-- **Push button 4 / D：** 文字左移 / 右移。
-- **BTN1：** Clear Display
-- **BTN2：** Return Home
-- **BTN4：** Cursor on/off
+- 一開始畫面清空(`clear()`)，游標顯示在左上角。
+- **Push button 1**：第一組文字(長度40)顯示在第一列。
+- **Push button A**：第二組文字(長度40)顯示在第二列。
+- **Push button 4 / D**：文字左移 / 右移。
+- **BTN1**：Clear Display
+- **BTN2**：Return Home
+- **BTN4**：Cursor on/off
 
 ## 程式碼
 
-### Lab3.ino（[Lab3.ino](Lab3.ino)）
+### Lab3.ino([Lab3.ino](Lab3.ino))
 
 ```cpp
 #include <LiquidCrystal.h>

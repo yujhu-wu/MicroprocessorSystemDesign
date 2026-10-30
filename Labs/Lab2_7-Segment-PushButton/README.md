@@ -1,26 +1,26 @@
-# Lab 2：Push Buttons and 7-Segment Control（七段顯示器跑馬燈）
+# Lab 2：Push Buttons and 7-Segment Control(七段顯示器跑馬燈)
 
 > 微處理機系統 · 課程作業 · [回到目錄](../../README.md)
 
-- **繳交期限：** 2024/10/11
-- **平台：** Andes ADP-CORVETTE-F1 開發板 + ACET Shield Board
-- **開發環境：** Arduino IDE 1.6.5
+- **繳交期限**：2024/10/11
+- **平台**：Andes ADP-CORVETTE-F1開發板 + ACET Shield Board
+- **開發環境**：Arduino IDE 1.6.5
 
 ## 題目要求
 
-選擇 4 個不同數字（0~9），以跑馬燈方式輸出到 4 位數七段顯示器。程式需有註解說明 Push Button 與 7-Segment 的控制。
+選擇4個不同數字(0~9)，以跑馬燈方式輸出到4位數七段顯示器。程式需有註解說明Push Button與7-Segment的控制。
 
-- 自由選定 **10 個 Push Buttons** 作為數字 0~9 的輸入，按下後將數字顯示在七段顯示器上。
-- 自由選定 **2 個 Push Buttons** 控制跑馬燈：
-  - **由左到右：** 最後按下的數字先飛入，數字必須完全飛出顯示器後，再將 4 個數字顯示在七段顯示器上並靜止。
-  - **由右到左：** 最先按下的數字先飛入，數字完全飛出後，再將 4 個數字顯示並靜止。
-  - 適當調整 `delay()`，數字需慢慢移入，不能太快。
+- 自由選定**10個Push Buttons**作為數字0~9的輸入，按下後將數字顯示在七段顯示器上。
+- 自由選定**2個Push Buttons**控制跑馬燈：
+  - **由左到右**：最後按下的數字先飛入，數字必須完全飛出顯示器後，再將4個數字顯示在七段顯示器上並靜止。
+  - **由右到左**：最先按下的數字先飛入，數字完全飛出後，再將4個數字顯示並靜止。
+  - 適當調整`delay()`，數字需慢慢移入，不能太快。
 
-**實作重點：** 透過 MC74HC595A 移位暫存器以 `shiftOut()` 送出段碼（`SEGMENT_MAP`）與位置選擇碼（`SEGMENT_SELECT`），並掃描 4×4 按鍵矩陣。
+**實作重點**：透過MC74HC595A移位暫存器以`shiftOut()`送出段碼(`SEGMENT_MAP`)與位置選擇碼(`SEGMENT_SELECT`)，並掃描4×4按鍵矩陣。
 
 ## 程式碼
 
-### Lab2.ino（[Lab2.ino](Lab2.ino)）
+### Lab2.ino([Lab2.ino](Lab2.ino))
 
 ```cpp
 #define LATCH_DIO D15

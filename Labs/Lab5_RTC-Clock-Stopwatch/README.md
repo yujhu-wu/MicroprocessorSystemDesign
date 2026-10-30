@@ -1,25 +1,25 @@
-# Lab 5：RTC 控制 – 時鐘顯示 & 碼錶控制
+# Lab 5：RTC控制 – 時鐘顯示 & 碼錶控制
 
 > 微處理機系統 · 課程作業 · [回到目錄](../../README.md)
 
-- **繳交期限：** 2024/12/06
-- **平台：** Andes ADP-CORVETTE-F1 開發板 + ACET Shield Board
-- **開發環境：** Arduino IDE 1.6.5
+- **繳交期限**：2024/12/06
+- **平台**：Andes ADP-CORVETTE-F1開發板 + ACET Shield Board
+- **開發環境**：Arduino IDE 1.6.5
 
 ## 題目要求
 
-使用 RTC（Real-Time Clock）在 LCM 顯示日期時間，並實作碼錶功能，程式需有註解說明各種指令之控制。
+使用RTC(Real-Time Clock)在LCM顯示日期時間，並實作碼錶功能，程式需有註解說明各種指令之控制。
 
-- 先將 RTC 設定為 Demo 當天日期與時間，第一列顯示 `MM/DD    HH:MM:SS`（例：`05/09    05:08:06`）。
+- 先將RTC設定為Demo當天日期與時間，第一列顯示`MM/DD    HH:MM:SS`(例：`05/09    05:08:06`)。
 - 碼錶功能：
-  1. **BTN1：** 進入碼錶功能，第二列最左邊顯示 `00:00:00`，最右邊顯示 `StopWatch`。
-  2. **BTN4：** 開始計時，右側顯示 `Counting`；再按一次暫停並顯示 `Stop`；再按一次繼續計時，依此類推。
-  3. **BTN2：** 碼錶重設為 `00:00:00`，右側顯示 `StopWatch`。
-  4. **BTN3：** 結束碼錶，清空第二列。
+  1. **BTN1**：進入碼錶功能，第二列最左邊顯示`00:00:00`，最右邊顯示`StopWatch`。
+  2. **BTN4**：開始計時，右側顯示`Counting`；再按一次暫停並顯示`Stop`；再按一次繼續計時，依此類推。
+  3. **BTN2**：碼錶重設為`00:00:00`，右側顯示`StopWatch`。
+  4. **BTN3**：結束碼錶，清空第二列。
 
 ## 程式碼
 
-### Lab5.ino（[Lab5.ino](Lab5.ino)）
+### Lab5.ino([Lab5.ino](Lab5.ino))
 
 ```cpp
 #include <RTC.h>

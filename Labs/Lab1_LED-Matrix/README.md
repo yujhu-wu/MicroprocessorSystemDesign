@@ -1,26 +1,26 @@
-# Lab 1：LED Matrix Control（LED 燈號變化）
+# Lab 1：LED Matrix Control(LED燈號變化)
 
 > 微處理機系統 · 課程作業 · [回到目錄](../../README.md)
 
-- **繳交期限：** 2024/09
-- **平台：** Andes ADP-CORVETTE-F1 開發板 + ACET Shield Board
-- **開發環境：** Arduino IDE 1.6.5
+- **繳交期限**：2024/09
+- **平台**：Andes ADP-CORVETTE-F1開發板 + ACET Shield Board
+- **開發環境**：Arduino IDE 1.6.5
 
 ## 題目要求
 
-控制 Shield Board 上的 LED 陣列，設計 5 種燈號變化模式，每種模式重複 2 次：
+控制Shield Board上的LED陣列，設計5種燈號變化模式，每種模式重複2次：
 
-1. 所有 LED 交替點亮：奇數燈先亮，再換偶數燈亮。
-2. 所有 LED 一起閃爍。
-3. 前半部與後半部交替閃爍：前 8 顆亮、後半熄滅，再換後 8 顆亮、前半熄滅。
-4. 每 3 顆 LED 為一組，依序閃爍到最後一顆，不重疊。
-5. 由左到右依序點亮所有 LED 且不熄滅，再由右到左依序熄滅。
+1. 所有LED交替點亮：奇數燈先亮，再換偶數燈亮。
+2. 所有LED一起閃爍。
+3. 前半部與後半部交替閃爍：前8顆亮、後半熄滅，再換後8顆亮、前半熄滅。
+4. 每3顆LED為一組，依序閃爍到最後一顆，不重疊。
+5. 由左到右依序點亮所有LED且不熄滅，再由右到左依序熄滅。
 
-**實作重點：** 以 16-bit 遮罩（如 `0xAAAA`、`0x5555`）搭配位元運算 `val & (1 << i)` 決定每顆 LED 的亮滅。
+**實作重點**：以16-bit遮罩(如`0xAAAA`、`0x5555`)搭配位元運算`val & (1 << i)`決定每顆LED的亮滅。
 
 ## 程式碼
 
-### Lab1.ino（[Lab1.ino](Lab1.ino)）
+### Lab1.ino([Lab1.ino](Lab1.ino))
 
 ```cpp
 #define NUM 15 // 定義 LED 的數量

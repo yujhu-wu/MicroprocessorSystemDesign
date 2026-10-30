@@ -1,25 +1,25 @@
-# Lab 4：PWM 控制實驗 – 錄放音機
+# Lab 4：PWM控制實驗 – 錄放音機
 
 > 微處理機系統 · 課程作業 · [回到目錄](../../README.md)
 
-- **繳交期限：** 2024/11/22
-- **平台：** Andes ADP-CORVETTE-F1 開發板 + ACET Shield Board
-- **開發環境：** Arduino IDE 1.6.5
+- **繳交期限**：2024/11/22
+- **平台**：Andes ADP-CORVETTE-F1開發板 + ACET Shield Board
+- **開發環境**：Arduino IDE 1.6.5
 
 ## 題目要求
 
-以 PWM 驅動蜂鳴器，製作可錄音與播放的電子琴，程式需有註解說明各種指令之控制。
+以PWM驅動蜂鳴器，製作可錄音與播放的電子琴，程式需有註解說明各種指令之控制。
 
-- **Push button 1~7：** 發出七個音符，LCM 第一列最左邊顯示 Do、Re、Mi、Fa、So、La、Si。
-- **Push button A / B / C：** 切換高 / 中 / 低音，LCM 第一列最右邊顯示 High、Middle、Low。
-- **BTN1：** 開始錄音，LCM 第二列顯示 `Recording`。
-- **BTN2：** 結束錄音，第二列顯示 `No Recording`。
-- **BTN3：** 播放錄音，第二列顯示 `Playing`。
-- **BTN4：** 播放預錄歌曲，第一列顯示歌名，第二列顯示 `Playing a Song.`
+- **Push button 1~7**：發出七個音符，LCM第一列最左邊顯示Do、Re、Mi、Fa、So、La、Si。
+- **Push button A / B / C**：切換高 / 中 / 低音，LCM第一列最右邊顯示High、Middle、Low。
+- **BTN1**：開始錄音，LCM第二列顯示`Recording`。
+- **BTN2**：結束錄音，第二列顯示`No Recording`。
+- **BTN3**：播放錄音，第二列顯示`Playing`。
+- **BTN4**：播放預錄歌曲，第一列顯示歌名，第二列顯示`Playing a Song.`
 
 ## 程式碼
 
-### Lab4.ino（[Lab4.ino](Lab4.ino)）
+### Lab4.ino([Lab4.ino](Lab4.ino))
 
 ```cpp
 #define de 200
